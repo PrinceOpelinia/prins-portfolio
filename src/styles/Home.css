@@ -1,0 +1,83 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+.home-title-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.home-center-text {
+  border: 0.3vw solid black; /* Border size adapts to screen width */
+  padding: 2vw; /* Padding scales with screen size */
+  max-width: 60vw; /* Makes the box responsive */
+  width: 80vw; /* Ensures it scales on smaller screens */
+}
+
+.big-text {
+  font-size: 3vw;
+  color: black;
+  padding: 5px;
+  margin-bottom: 10px; /* Ensure spacing between big and small text */
+}
+
+.small-text {
+  font-size: 1.5vw;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Spacing between text and buttons */
+  gap: 20px; /* Spacing between buttons */
+}
+
+.button-container button {
+  background: none;
+  border: none;
+  color: var(--button-color);
+  font-size: 1.5vw;
+  cursor: pointer;
+  transition: transform 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
+  text-decoration: none; /* Ensure no underline by default */
+  line-height: 1.2; /* Adjust line-height to ensure underline is visible */
+}
+
+.button-container button:hover {
+  transform: scale(1.2); /* Enlarge the button text on hover */
+  text-decoration: underline; /* Add an underline on hover */
+  text-decoration-thickness: 2px; /* Control the thickness of the underline */
+  text-underline-offset: 0.2em; /* Adjust the distance between text and underline */
+}
+
+.bottom-right-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure the button is above other elements */
+  }
+  
+  .bottom-right-button button {
+    background-color: none;
+    background: none;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.6s ease; /* Adjust the transition duration and easing */
+  }
+  
+  .bottom-right-button button:hover {
+    transform: scale(2); /* Enlarge the container slightly on hover */
+  }
